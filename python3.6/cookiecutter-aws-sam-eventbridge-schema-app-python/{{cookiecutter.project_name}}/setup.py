@@ -1,6 +1,5 @@
-{% set schema_root = cookiecutter.AWS_Schema_root.split('.')[0] %}
 from setuptools import setup
-
+{% set schema_root = cookiecutter.AWS_Schema_root.split('.')[0] %}
 setup(
-    name="{{ schema_root }}", version="1.0", packages=["{{ cookiecutter.function_name }}/{{ schema_root }}"],
+    name="{{ schema_package }}", version="1.0", packages=["{{ cookiecutter.function_name }}/{{ schema_package }}"],
 )
